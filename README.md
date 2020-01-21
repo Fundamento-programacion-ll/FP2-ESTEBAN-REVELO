@@ -10,3 +10,17 @@
 _2020_ 
 
 ~~Alejandro~~  *_Jaramillo_*
+
+### listas no ordenada ###
+
+* *aquiles*
++ baeza
+- **aquiles**
+
+### listas ordenada ###
+
+1. *que*
+2. **mas**
+3. ve 
+
+ESTEBAN REVELO [Click Perfil en GIT](https://github.com/StbanJ)
