@@ -24,3 +24,5 @@ _2020_
 3. ve 
 
 ESTEBAN REVELO [Click Perfil en GIT](https://github.com/StbanJ)
+
+![GOOGLE](https://www.google.es/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png)
