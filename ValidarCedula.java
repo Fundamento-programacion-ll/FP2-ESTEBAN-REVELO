@@ -31,7 +31,7 @@ public class ValidarCedula {
         if (ultimo==resta) {
             System.out.println("EL NUMERO DE CEDULA INGRESADA ES CORRECTA");
         }else{
-            System.out.println("EL NUMERO DE CEDULA ENGRESADA ES INCORRECTA");
+            System.out.println("EL NUMERO DE CEDULA INGRESADA ES INCORRECTA");
         }
     }
 }
