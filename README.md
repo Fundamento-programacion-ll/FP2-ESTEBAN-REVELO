@@ -26,3 +26,40 @@ _2020_
 ESTEBAN REVELO [Click Perfil en GIT](https://github.com/StbanJ)
 
 ![GOOGLE](https://www.google.es/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png)
+
+
+## codigo
+
+```Phyton
+
+```
+
+``` javaScript
+var a = 'hola'
+
+```
+
+# tablas
+
+| edad | nombre |
+| -----| -------|
+| 24   | Esteban|
+| 17   | Viviana|
+
+## lineas
+
+---
+
+___
+
+***
+
+# videos 
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=Lc7l4RZ2Q6s" target="_blank">
+<img
+src="http://img.youtube.com/vi/Lc7l4RZ2Q6s/0.jpg"
+></img>
+</a>
+
+[![imagen videos](http://img.youtube.com/vi/Lc7l4RZ2Q6s/0.jpg)](http://www.youtube.com/watch?feature=player_embedded&v=Lc7l4RZ2Q6s)
