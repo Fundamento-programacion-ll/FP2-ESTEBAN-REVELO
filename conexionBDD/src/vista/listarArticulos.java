@@ -6,6 +6,9 @@
 package vista;
 
 import controlador.controladorArticulo;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -22,6 +25,7 @@ public class listarArticulos extends javax.swing.JFrame {
    
     public listarArticulos() {
         initComponents();
+        
     }
 
     /**
@@ -39,7 +43,7 @@ public class listarArticulos extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        cbTipoBuscar.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ID", "nombre" }));
+        cbTipoBuscar.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ninguno", "ID", "nombre" }));
         cbTipoBuscar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cbTipoBuscarActionPerformed(evt);
@@ -90,7 +94,11 @@ public class listarArticulos extends javax.swing.JFrame {
         String item = cbTipoBuscar.getSelectedItem().toString();
         System.out.println("item " + item);
         String valorABuscar = txtBuscar.getText();
-        articuloControlador.BuscarDatosPorIdNombre(item, valorABuscar); // item cb, valor a buscar
+       try {
+           articuloControlador.BuscarDatosPorIdNombre(item, valorABuscar); // item cb, valor a buscar
+       } catch (SQLException ex) {
+           Logger.getLogger(listarArticulos.class.getName()).log(Level.SEVERE, null, ex);
+       }
         
     }//GEN-LAST:event_btnBuscarActionPerformed
 
