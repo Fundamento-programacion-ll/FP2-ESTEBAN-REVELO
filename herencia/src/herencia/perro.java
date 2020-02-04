@@ -1,17 +1,17 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package herencia;
 
-public class perro extends animal {
-
-    protected float estatura;
-
-    public perro(float estatura) {
-        this.estatura = estatura;
-    }
-
-    public perro(float estatura, String especie, String genero, String nombre) {
-        super(especie, genero, nombre);
-        this.estatura = estatura;
-    }
+/**
+ *
+ * @author Bryan
+ */
+public class Perro extends Animal{
+    
+    private float estatura;
 
     public float getEstatura() {
         return estatura;
@@ -21,11 +21,20 @@ public class perro extends animal {
         this.estatura = estatura;
     }
 
-    public int sumaPerro(int n1, int n2) {
-        return suma(n1, n2);
+    public Perro(float estatura, String especie, String genero, String nombre, int edad) {
+        super(especie, genero, nombre, edad);
+        this.estatura = estatura;
     }
 
-    public void datosPerro() {
-        System.out.println("nombre: " + getNombre() + " edad: " + getEdad() + " estatura: " + getEstatura());
+    public Perro(float estatura) {
+        this.estatura = estatura;
     }
+    
+    public void datosPerro(){
+    
+        System.out.println("Estatura: "+getEstatura()+ " Nombre: "+getNombre()+" Especie: "+getEspecie()+ " Género: "+getGenero()+" Edad: "+getEdad());
+    
+    
+    }
+    
 }

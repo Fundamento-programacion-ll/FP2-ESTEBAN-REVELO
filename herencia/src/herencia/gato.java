@@ -1,27 +1,50 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package herencia;
 
-public class gato extends animal {
+/**
+ *
+ * @author Bryan
+ */
+public class Gato extends Animal{
+    
+    private float estatura;
+    private String colOjos;
 
-    private String colorOjos;
-
-    public gato(String colorOjos) {
-        this.colorOjos = colorOjos;
+    public float getEstatura() {
+        return estatura;
     }
 
-    public gato(String colorOjos, String especie, String genero, String nombre) {
-        super(especie, genero, nombre);
-        this.colorOjos = colorOjos;
+    public String getColOjos() {
+        return colOjos;
     }
 
-    public String getColorOjos() {
-        return colorOjos;
+    public void setEstatura(float estatura) {
+        this.estatura = estatura;
     }
 
-    public void setColorOjos(String colorOjos) {
-        this.colorOjos = colorOjos;
+    public void setColOjos(String colOjos) {
+        this.colOjos = colOjos;
     }
 
-    public void info() {
-        System.out.println(getNombre() + " " + getColorOjos() + " " + getGenero() + " " + getEdad());
+    public Gato(float estatura, String colOjos, String especie, String genero, String nombre, int edad) {
+        super(especie, genero, nombre, edad);
+        this.estatura = estatura;
+        this.colOjos = colOjos;
     }
+
+    public Gato(float estatura, String colOjos) {
+        this.estatura = estatura;
+        this.colOjos = colOjos;
+    }
+    
+    public void datosGato(){
+    
+        System.out.println("Nombre: "+getNombre()+" Género: "+getGenero()+" Color de Ojos: "+getColOjos()+" Especie: "+getEspecie()+" Estatura: "+getEstatura()+" Edad: "+getEdad());
+    
+    }
+    
 }
