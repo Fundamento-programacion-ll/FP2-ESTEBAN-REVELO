@@ -17,8 +17,8 @@ public class producto extends javax.swing.JFrame {
 
     public producto() {
         initComponents();
-        cbRegistros.addItem("asdasd");
-        cbRegistros.addItem("OPCION NUEVA");
+        cbRegistros.addItem("aasdfg");
+        cbRegistros.addItem("Opcion Nueva");
         try {
             System.out.println("Imprimir Lista");
             listaNombres = articuloControlador.obtenerDatos();
