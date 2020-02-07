@@ -1,9 +1,11 @@
 package dibujos;
 
+import java.awt.Canvas;
 import java.awt.Graphics;
-import javax.swing.JPanel;
 
-public abstract class figura extends JPanel {
+public abstract class figura extends Canvas {
 
-    public abstract void dibujo(Graphics g);
+    public abstract void paint(Graphics g);
+
+    public abstract double getArea();
 }
